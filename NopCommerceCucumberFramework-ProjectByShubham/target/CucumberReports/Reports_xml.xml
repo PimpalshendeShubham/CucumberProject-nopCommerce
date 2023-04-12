@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="57.954" tests="5" skipped="0" failures="0" errors="0">
+<testcase classname="As an Admin User of the Nop Commerce" name="Add New Customer" time="29.165">
+<system-out><![CDATA[
+Given User Launch Chrome browser............................................passed
+When User opens URL "http://admin-demo.nopcommerce.com/login"...............passed
+And User enters Email as "admin@yourstore.com" and Password as "admin"......passed
+And Click on Login..........................................................passed
+Then User can view Dashboard................................................passed
+When User click on customers Dropdown Menu..................................passed
+And click on customers Item.................................................passed
+And click on Add new button.................................................passed
+Then User can view Add new customer page....................................passed
+When User enter customer info...............................................passed
+And click on Save button....................................................passed
+Then User can view confirmation message "The new customer has been added successfully.".passed
+And close browser...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search Customer" name="Search Customer by Name" time="13.6">
+<system-out><![CDATA[
+Given User Launch Chrome browser............................................passed
+When User opens URL "http://admin-demo.nopcommerce.com/login"...............passed
+And User enters Email as "admin@yourstore.com" and Password as "admin"......passed
+And Click on Login..........................................................passed
+Then User can view Dashboard................................................passed
+When User click on customers Dropdown Menu..................................passed
+And click on customers Item.................................................passed
+And Enter customer Name.....................................................passed
+When Click on search button.................................................passed
+Then User should found Name in the Search table.............................passed
+And close browser...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Unsuccessful Login With Invalid Credentials - Example #1.1" time="4.957">
+<system-out><![CDATA[
+Given User Launch Chrome browser............................................passed
+When User opens URL "http://admin-demo.nopcommerce.com/login"...............passed
+And User enters Email as "test@123.com" and Password as "test123"...........passed
+And Click on Login..........................................................passed
+Then Page Title should be "Your store. Login"...............................passed
+And close browser...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Unsuccessful Login With Invalid Credentials - Example #1.2" time="5.283">
+<system-out><![CDATA[
+Given User Launch Chrome browser............................................passed
+When User opens URL "http://admin-demo.nopcommerce.com/login"...............passed
+And User enters Email as "test@456.com" and Password as "test456"...........passed
+And Click on Login..........................................................passed
+Then Page Title should be "Your store. Login"...............................passed
+And close browser...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Unsuccessful Login With Invalid Credentials - Example #1.3" time="4.726">
+<system-out><![CDATA[
+Given User Launch Chrome browser............................................passed
+When User opens URL "http://admin-demo.nopcommerce.com/login"...............passed
+And User enters Email as "test@789.com" and Password as "test789"...........passed
+And Click on Login..........................................................passed
+Then Page Title should be "Your store. Login"...............................passed
+And close browser...........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
